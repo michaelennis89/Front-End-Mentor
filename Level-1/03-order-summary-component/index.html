@@ -8,31 +8,37 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Order summary card</title>
 
 </head>
 <body>
-  <div class="container">
-    <div></div>
-    <div>
-      <div>Order Summary</div>
-      <div>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</div>
-      <div>
-        <div></div>
-        <div>
-          <div>Annual Plan</div>
-          <div>$59.99/year</div>
-        </div>
-        <div>Change</div>
-      </div>
-      <div>Proceed to Payment</div>
-      <div>Cancel Order</div>
-    </div>
-  </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Michael Ennis</a>.
+<div class="container">
+  <div><img class="illustration-hero" src="/images/illustration-hero.svg" alt=""></div>
+  <div class="container-text">
+    <div class="title">Order Summary</div>
+      <div>
+        <p class="description">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+      </div>
+    <div class="container-plan">
+      <div><img class="icon-music" src="/images/icon-music.svg" alt=""></div>
+      <div class="plan-type">
+        <div class="plan-type-text">Annual Plan</div>
+        <div class="plan-type-price">$59.99/year</div>
+      </div>
+      <div class="plan-change"><a href="#">Change</a></div>
+    </div>
+    <div class="payment-proceed">Proceed to Payment</div>
+    <div class="payment-cancel">Cancel Order</div>
   </div>
+</div>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://github.com/michaelennis89/Front-End-Mentor/tree/main/Level-1/03-order-summary-component">Michael Ennis</a>.
+ </div>
 </body>
 </html>

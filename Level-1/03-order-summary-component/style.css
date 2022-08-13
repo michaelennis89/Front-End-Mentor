@@ -89,8 +89,11 @@ select {
     --ff-primary: 'Red Hat Display', sans-serif;
 }
 
+*{
+    font-family: var(--ff-primary);
+}
 p {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .attribution {
@@ -100,4 +103,149 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+html {
+    background-color: var(--clr-primary-pale-blue);
+}
+
+.container {
+    width: 450px;
+    border-radius: 20px;
+    margin: auto; 
+}
+
+.illustration-hero {
+    border-radius: 20px 20px 0 0;
+}
+
+.container-text {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 0 50px 0 50px; 
+    border-radius: 0 0 20px 20px;
+}
+
+.title {
+    font-weight: var(--fw-extra-bold);
+    font-size: 1.75em;
+    color: var(--clr-neutral-dark-blue);
+    margin-top: 45px; 
+}
+
+.description {
+    text-align: center;
+    color: var(--clr-neutral-desaturated-blue);
+    margin-top: 15px;
+}
+
+.container-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--clr-neutral-very-pale-blue);
+    width: 100%; 
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.plan-type {
+    margin: 10px 90px 10px 20px; 
+}
+
+.plan-type-text{
+    font-weight: var(--fw-extra-bold);
+    color: var(--clr-neutral-dark-blue);
+}
+
+.plan-type-price{
+    color: var(--clr-neutral-desaturated-blue);
+}
+
+.plan-change {
+    font-weight: var(--fw-extra-bold);
+}
+
+.plan-change:hover {
+    opacity: 0.6;
+}
+
+.payment-proceed {
+    background-color: var(--clr-primary-bright-blue);
+    color: var(--clr-primary-pale-blue);
+    font-weight: var(--fw-bold);
+    width: 100%;
+    text-align: center;
+    padding: 14px 0 14px 0; 
+    border-radius: 12px;
+    box-shadow: 0 15px 15px 0 hsl(223, 30%, 79%);
+    margin-top: 30px;
+}   
+
+.payment-proceed:hover{
+    cursor: pointer;
+    opacity: 0.7; 
+}
+
+.payment-cancel { 
+    color: var(--clr-neutral-desaturated-blue);
+    font-weight: var(--fw-bold);
+    font-size: 15px;
+    margin: 30px 0 48px 0; 
+}
+
+.payment-cancel:hover {
+    cursor: pointer;
+    color: var(--clr-neutral-dark-blue);
+    font-weight: var(--fw-extra-bold);
+}
+
+@media (max-width: 50em) {
+    .container {
+        width: 325px;
+    }
+
+    .container-text {
+        padding: 30px;
+        margin: 0; 
+    }
+
+    .title {
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 16px; 
+        padding: 15px 0 0 0 ;
+        margin: 0;
+    }
+
+    .container-plan {
+        margin: 20 px 0 0 0;
+        border-radius: 10px;
+        padding: 20px; 
+    }
+
+    .plan-type {
+        margin: 0 20px 0 25px; 
+        font-size: 14px; 
+    }
+
+    .plan-change {
+        font-size: 13px;
+    }
+
+    .payment-proceed {
+        font-size: 15px;
+        margin: 20px 0 20px 0;
+    }
+
+    .payment-cancel {
+        margin: 0 0 2px 0; 
+    }
 }

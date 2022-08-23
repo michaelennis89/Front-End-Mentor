@@ -106,7 +106,7 @@ body {
 }
 
 .container-image {
-  background-image: url(/images/drawers.jpg);
+  background-image: url(./images/drawers.jpg);
   background-size: 350px 280px;
   width: 285px;
   height: 279.5px;
@@ -239,6 +239,70 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 55em) {
+@media (max-width: 54em) {
+  .container {
+    flex-direction: column;
+    width: 325px;
+  }
 
+  .container-image {
+    width: 325px;
+    height: 200px;
+    background-size: 325px 240px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius:  12px;
+  }
+
+  .container-text {
+    width: 325px;
+    padding: 34px;
+  }
+
+  .title {
+    margin-top: 3px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .description {
+    font-size: 13px;
+    margin-top: 13px; 
+  }
+
+  .container-author {
+    margin-top: 34px;
+    margin-bottom: -14px;
+  }
+
+  .container-name-date {
+    margin-right: 55px; 
+  }
+
+  .share-icon-white[display="true"]{
+    z-index: 1;
+  }
+
+  .share-pop-up[display="true"]::before {
+    display: none; 
+  }
+
+  .share-pop-up[display="true"] {
+    width: 325px;
+    right: -34px;
+    top: -8px;
+    padding: 22px 40px 22px 40px; 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    justify-content: left;
+
+  }
+
+  .share-text {
+    margin-left: -8px;
+    margin-right: 8px;
+  }
+  
+  .padding-lr-8 {
+    padding: 0 8px 0 8px;
+  }
 }

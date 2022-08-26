@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Ping coming soon page</title>
-
+  <link rel="stylesheet" href="./style.css">
   <script src="https://kit.fontawesome.com/c1c0ad50d7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,7 +20,7 @@
   <div class="container">
     <div class="logo-ping"><img src="./images/logo.svg" alt=""></div>
     <div class="launch">We are launching <span class="launch-soon">soon!</span></div>
-    <div class="email-form">
+    <div class="subscribe">Subscribe and get notified</div>
       <form action="" method="post">
         <input class="email-input" type="text" placeholder="Your email address...">
         <button class="email-button">Notify Me</button>
@@ -28,9 +28,14 @@
     </div>
     <div class="illustration-dashboard"><img src="./images/illustration-dashboard.png" alt=""></div>
     <div class="social-logos">
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-2xs fa-brands fa-facebook-f icon-color"></i>
+      <i class="twitter-logo  logo-border fa-xs fa-brands fa-twitter icon-color"></i>
+      <i class="fa-xs fa-brands fa-instagram icon-color"></i>
+    </div>
+    <div style="display: flex; flex-direction:row; position: relative; left: 407px; top: -30px; ">
+      <div class="border-custom"></div>
+      <div class="border-custom" style="margin-left: 45px; margin-right: 48px;"></div>
+      <div class="border-custom"></div>
     </div>
     <div class="copyright-text"> &copy; Copyright Ping. All rights reserved.</div>
   </div>
@@ -38,7 +43,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/michaelennis89/Front-End-Mentor/tree/main/Level-1/06-ping-coming-soon-page">Michael Ennis</a>.
     </p>
   </footer>
 </body>

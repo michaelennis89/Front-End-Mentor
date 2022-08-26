@@ -92,44 +92,102 @@ html{
 
 }
 
+body {
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary);
+}
+
 .container {
 
 }
 
 .logo-ping {
-
+  display: inline-block;
+  margin: 15px 0 0 0;
 }
 
 .launch {
-
+  margin: 35px 0 0 0; 
+  font-size: 48px;
+  font-weight: var(--fw-light);
+  color: var(--clr-neutral-gray);
 }
 
 .launch-soon {
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-neutral-blue);
+}
 
+.subscribe {
+  margin: 6px 0 0 0; 
 }
 
 .email-form {
-
+  align-content: center;
 }
 
 .email-input {
+  width: 425px; 
+  padding: 12px 0 12px 40px; 
+  margin: 32px 0 0 0; 
+  border-radius: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--clr-neutral-gray);
+}
 
+.email-input::placeholder {
+  font-size: 16px;
+  color: var(--clr-secondary-blue);
 }
 
 .email-button {
-
+  width: 196px; 
+  font-size: 16px;
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-primary);
+  color: white;
+  border: none; 
+  padding: 16px 0 16px 0;
+  border-radius: 40px;
+  white-space: nowrap;
+  margin-left: 15px;
+  
 }
 
 .illustration-dashboard {
-
+  margin-top: 90px;
+  width: 640px; 
+  display: inline-block;
 }
 
 .social-logos {
-
+  margin-top: 64px;
 }
 
-.copyright-text {
+.border-custom::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px; 
+  border-radius: 15px;
+  border: 1px solid var(--clr-neutral-gray);
+}
 
+.icon-color {
+  color: var(--clr-primary);
+}
+
+.twitter-logo {
+  margin: 0 29px 0 29px; 
+}
+
+
+.copyright-text {
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--clr-neutral-gray);
 }
 
 .attribution { font-size: 11px; text-align: center; }

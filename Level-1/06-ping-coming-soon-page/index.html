@@ -13,6 +13,7 @@
   <title>Frontend Mentor | Ping coming soon page</title>
   <link rel="stylesheet" href="./style.css">
   <script src="https://kit.fontawesome.com/c1c0ad50d7.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -22,20 +23,16 @@
     <div class="launch">We are launching <span class="launch-soon">soon!</span></div>
     <div class="subscribe">Subscribe and get notified</div>
       <form action="" method="post">
-        <input class="email-input" type="text" placeholder="Your email address...">
-        <button class="email-button">Notify Me</button>
+        <input class="email-input" id="email-input" type="text" placeholder="Your email address...">
+        <button type="button" class="email-button" id="email-button">Notify Me</button>
       </form>
     </div>
+    <div class="email-invalid" id="email-invalid">Please provide a valid email address</div>
     <div class="illustration-dashboard"><img src="./images/illustration-dashboard.png" alt=""></div>
     <div class="social-logos">
-      <i class="fa-2xs fa-brands fa-facebook-f icon-color"></i>
-      <i class="twitter-logo  logo-border fa-xs fa-brands fa-twitter icon-color"></i>
-      <i class="fa-xs fa-brands fa-instagram icon-color"></i>
-    </div>
-    <div style="display: flex; flex-direction:row; position: relative; left: 407px; top: -30px; ">
-      <div class="border-custom"></div>
-      <div class="border-custom" style="margin-left: 45px; margin-right: 48px;"></div>
-      <div class="border-custom"></div>
+      <div class="social-facebook social-border"><i class="fa-xs fa-brands fa-facebook-f"></i></div>
+      <div class="social-twitter social-border"><i class="fa-xs fa-brands fa-twitter"></i></div>
+      <div class="social-instagram social-border"><i class="fa-xs fa-brands fa-instagram"></i></div>
     </div>
     <div class="copyright-text"> &copy; Copyright Ping. All rights reserved.</div>
   </div>

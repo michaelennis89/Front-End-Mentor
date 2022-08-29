@@ -129,8 +129,8 @@ body {
 
 .email-input {
   width: 425px; 
-  padding: 12px 0 12px 40px; 
-  margin: 32px 0 0 0; 
+  padding: 15px 0 15px 36px; 
+  margin:  38px 0 0 0; 
   border-radius: 40px;
   border-width: 1px;
   border-style: solid;
@@ -140,6 +140,29 @@ body {
 .email-input::placeholder {
   font-size: 16px;
   color: var(--clr-secondary-blue);
+}
+
+.email-input[type="text"] {
+  font-size: 16px;
+}
+
+.email-input:invalid {
+  border-color: red;
+}
+
+.email-invalid {
+  margin-top: 10px; 
+}
+.email-invalid[display="true"] {
+  font-size: 12px;
+  color: red; 
+  position: relative;
+  left: -183px; 
+  font-style: italic;
+}
+
+.email-invalid[display="false"] {
+  display: none;
 }
 
 .email-button {
@@ -153,9 +176,12 @@ body {
   border-radius: 40px;
   white-space: nowrap;
   margin-left: 15px;
-  
 }
 
+.email-button:hover {
+  background-color: hsl(223, 87%, 73%);
+  cursor: pointer;
+}
 .illustration-dashboard {
   margin-top: 90px;
   width: 640px; 
@@ -163,29 +189,63 @@ body {
 }
 
 .social-logos {
-  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  margin: 60px 0 0 0; 
 }
 
-.border-custom::after {
-  content: "";
-  position: absolute;
-  height: 30px;
-  width: 30px; 
-  border-radius: 15px;
-  border: 1px solid var(--clr-neutral-gray);
+.social-facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-primary); 
+}
+.social-facebook:hover {
+  color: white; 
 }
 
-.icon-color {
-  color: var(--clr-primary);
+.social-twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 18px 0 18px; 
+  color: var(--clr-primary);  
+}
+.social-twitter:hover {
+  color: white;  
 }
 
-.twitter-logo {
-  margin: 0 29px 0 29px; 
+.social-instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-primary); 
+}
+.social-instagram:hover {
+  color: white; 
 }
 
+.social-border {
+  width: 25px;
+  height: 25px; 
+  border: 1px solid lightgray; 
+  border-radius: 25px; 
+
+}
+
+.social-border:hover {
+  border: 1px solid var(--clr-primary);
+  width: 25px;
+  height: 25px; 
+  background-color: var(--clr-primary);
+  cursor: pointer;
+}
 
 .copyright-text {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 12px;
   color: var(--clr-neutral-gray);
 }

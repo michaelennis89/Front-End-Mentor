@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailInvalid = document.getElementById("email-invalid"); 
 
     emailInvalid.setAttribute('display', false); 
+    emailButton.setAttribute('extra-margin', false);
 
     emailButton.addEventListener("click", function(){
         const inputText = emailInput.value;
@@ -16,10 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!ValidateEmail(inputText)) {
             emailInput.setCustomValidity("Invalid Email");
             emailInvalid.setAttribute('display', true); 
+            emailButton.setAttribute('extra-margin', true);
         }
         else {
             emailInput.setCustomValidity("");
             emailInvalid.setAttribute('display', false); 
+            emailButton.setAttribute('extra-margin', false);
         }
         
     });

@@ -169,6 +169,70 @@ body{
     background-color: var(--clr-primary-green);
 }
 
+.disclaimer {
+
+}
+
+.tos {
+
+}
+
+
+
+@media (max-width: 50em) {
+    .even-columns {
+
+    }
+
+    .left-column {
+
+    }
+
+    .right-column {
+
+    }
+
+    .title {
+
+    }
+
+    .description {
+
+    }
+
+    .price-data {
+
+    }
+
+    .price-lower-fw {
+
+    }
+
+    .form-data {
+
+    }
+
+    .form-container {
+
+    }
+
+    .form-inputs {
+
+    }
+
+    .form-button {
+
+    }
+
+    .disclaimer {
+
+    }
+    
+    .tos {
+    
+    }
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;

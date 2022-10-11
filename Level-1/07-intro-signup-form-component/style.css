@@ -92,13 +92,13 @@ select {
 
 body{
     font-family: var(--ff-primary);
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: var(--clr-primary-red);
 }
 
 .even-columns {
     display: flex;
     flex-direction: row;
-    background-image: url(./images/bg-intro-desktop.png);
-    background-color: var(--clr-primary-red);
     width: 1440px;
     height: 800px;
     padding: 0 165px 0 165px; 
@@ -207,33 +207,37 @@ body{
 @media (max-width: 50em) {
     .even-columns {
         flex-direction: column;
+        align-items: center;
         width: 375px;
         padding: 10px;
         height: 100%;
     }
 
     .left-column {
-        width: 350px;
+        width: 325px;
+        padding: 80px 0 0 0;
     }
 
     .right-column {
-        width: 350px;
+        width: 325px;
+        margin: 0 0 100px 0;
     }
 
     .title {
-        margin: 0;
-        padding: 65px 25px 0 25px;
         font-size: 28px;
-        line-height: 34px;
+        line-height: 38px;
         text-align: center;
     }
 
     .description {
         text-align: center;
+        line-height: 26px;
+        margin-top: 20px;
     }
 
     .price-data {
-
+        margin: 60px 0 0 0;
+        padding: 22px 50px 22px 50px;
     }
 
     .price-lower-fw {
@@ -241,27 +245,26 @@ body{
     }
 
     .form-data {
-
+        padding: 25px;
     }
 
     .form-container {
-
+        height: 390px;
     }
 
     .form-inputs {
-
+        padding-left: 15px;
     }
 
     .form-button {
-
+        padding: 15px 0 15px 0;
+        text-align: center;
+        align-items: center;
     }
 
     .disclaimer {
-
-    }
-    
-    .tos {
-    
+        padding: 0 20px 0 20px;
+        line-height: 22px;
     }
 }
 

@@ -4,17 +4,17 @@
     --clr-primary-blackish-blue: hsl(219, 29%, 14%);
     --clr-primary-white: hsl(0, 0%, 100%);
     
+    --clr-neutral-darker-gray: hsl(0, 0%, 62%);
     --clr-neutral-gray: hsl(0, 0%, 81%);
     --clr-neutral-grayish-blue: hsl(210, 46%, 95%);
 
-    --clr-verified-graduate: hsl(from var(--clr-primary-white) hsl / 50%);
-    --clr-review-paragraphs: hsl(from var(--clr-primary-white) hsl / 70%);
+    --clr-verified-graduate: hsla(0, 0%, 100%, 50%);
+    --clr-review-paragraphs: hsla(0, 0%, 100%, 70%);
     
     --fs-body: 13px;
     --fw-medium: 500;
     --fw-semibold: 600;
     --font-family: 'Barlow Semi Condensed', sans-serif;
-
 }
 
 /* Box sizing rules */
@@ -108,37 +108,83 @@ body {
       display: flex;
       flex-direction: column;
       margin: 25px;
-      padding: 30px;
+      padding: 32px;
       border-radius: 7px;
+      z-index: 0;
+    }
+
+    .quotation-img {
+      position: absolute;
+      left: 222px;
+      top: 70px;
+      z-index: 1;
     }
 
     .profile {
       display: flex;
       flex-direction: row;
-      align-items: center;
       font-size: 12px; 
+      margin-top: -5px;
     }
 
     .picture {
-      width: 30px;
-      border-radius: 15px;
+      width: 32px;
+      border-radius: 20px;
+      margin-top: -2px; 
       margin-right: 15px; 
+      border-width: 2px;
+      border-style: solid;
+      border-color: var(--clr-verified-graduate);
     }
 
     .name {
       color: var(--clr-primary-white);
     }
 
-    .graduate {
+    .name-drk {
+      color: var(--clr-primary-grayish-blue);
+    }
 
+    .graduate {
+      color: var(--clr-verified-graduate);
+    }
+
+    .graduate-drk {
+      color: var(--clr-neutral-gray);
     }
 
     .title {
+      color: var(--clr-primary-white);
+      margin-top: 6px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: var(--fw-semibold);
+      z-index: 2;
+    }
 
+    .title-drk {
+      color: var(--clr-primary-grayish-blue);
+      margin-top: 6px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: var(--fw-semibold);
     }
 
     .description {
+      color: var(--clr-review-paragraphs);
+      margin-top: 18px;
+      font-size: 13px;
+      font-weight: var(--fw-medium);
+      letter-spacing: .3px;
+      line-height: 18px;
+    }
 
+    .description-drk {
+      color: var(--clr-neutral-darker-gray);
+      margin-top: 18px;
+      font-size: 13px;
+      font-weight: var(--fw-medium);
+      line-height: 18px;
     }
 }
 
